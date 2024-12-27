@@ -10,17 +10,17 @@ To learn and practice fundamental concepts of time series analysis using pandas 
 import pandas as pd
 import numpy as np
 
-# Generate date range
+##### Generate date range
 date_rng = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')
 
-# Generate random values between -5 and 5
+##### Generate random values between -5 and 5
 data = np.random.uniform(-5, 5, size=len(date_rng))
 
-# Create a pandas Series
+##### Create a pandas Series
 ts = pd.Series(data, index=date_rng)
 ts.name = "Random Values"
 
-# Display first few rows
+##### Display first few rows
 print(ts.head())
 
 
